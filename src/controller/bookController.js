@@ -25,11 +25,10 @@ bookRouter.get('', (req, res) => {
 })
 
 //GET por id
-bookRouter.get('/id/:id', (req, res, next) => {
+bookRouter.get('/:id', (req, res, next) => {
     const { id } = req.params;
     const books = bookService.consultBooksById(id)
     if(!books) {
-        
         res.status(404).json({ message: `Book with id ${id} was not found `});
     }
     else {

@@ -8,8 +8,8 @@ const db = low(adapter)
 //Lo usaremos para crear ids random
 const {v4:uuidv4} = require('uuid') 
 
-//Defaults de la BBDD
-db.defaults({books: []}).write()
+//Defaults de la BBDD. Esto solo hay que hacerlo en 1 modelo, no en todos (con todas las entidades)
+db.defaults({books: [], authors: [], categories: []}).write()
 
 
 
@@ -32,7 +32,7 @@ const consultAllBooks = () => {
 }
 
 //Servicio para consultar libros por id. Esta función será llamada desde el GET by id
-const consultBooksById = (id, req, res) => {
+const consultBooksById = (id) => {
     const books = db.get('books')
     .find({ id: id })
     .value()
@@ -41,7 +41,7 @@ const consultBooksById = (id, req, res) => {
 }
 
 //Servicio para consultar libros por isbn. Esta función será llamada desde el GET by isbn
-const consultBooksByIsbn = (isbn, req, res) => {
+const consultBooksByIsbn = (isbn) => {
     const books = db.get('books')
     .find({ isbn: isbn })
     .value()
@@ -50,7 +50,7 @@ const consultBooksByIsbn = (isbn, req, res) => {
 }
 
 //Servicio para actualizar libros por id. Esta función será llamada desde el PUT by id (pasando todos los atributos)
-const updateBook = (data, id, req, res) => {
+const updateBook = (data, id) => {
     db.get('books')
     .find({ id: id })
     .assign(data)
@@ -59,7 +59,7 @@ const updateBook = (data, id, req, res) => {
 
 
 //Servicio para actualizar libros por id. Esta función será llamada desde el PUT by id (pasando todos los atributos)
-const deleteBook = (id, req, res) => {
+const deleteBook = (id) => {
     db.get('books')
     .remove({ id: id })
     .write()

@@ -1,28 +1,10 @@
 {
-  "books": [
+  "books": [],
+  "authors": [
     {
-      "title": "Hi-Fi",
-      "author": "Nick Hornby",
-      "isbn": "817525766-0",
-      "numPages": 413,
-      "category": [
-        "Comedy",
-        "Drama",
-        "English"
-      ],
-      "id": "d900826b-25ab-4f0d-b9a2-3371121e647b",
-      "booked": true
-    },
-    {
-      "title": "Test",
-      "author": "Nick Hornby",
-      "isbn": "817525766-1",
-      "numPages": 350,
-      "category": [
-        "Terror"
-      ],
-      "id": "2fcca1d8-970f-4772-baaa-4327c340481a",
-      "booked": false
+      "name": "test",
+      "id": "b6b39b11-4e6d-4cd4-be41-a7e3b0437eb0"
     }
-  ]
+  ],
+  "categories": []
 }
