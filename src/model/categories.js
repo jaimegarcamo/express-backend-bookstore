@@ -1,0 +1,13 @@
+/*
+Category {
+    id: uuid,
+    name: string
+}
+*/
+
+//El POST solo se pasará el name. El id se gener random
+
+/*MISMOS METODOS QUE BOOKS */
+
+/*CUANDO CREEMOS O MODIFIQUEMOS UN BOOK HABRA QUE VALIDAR QUE EL AUTOR Y LAS CATEGORIAS EXISTAN. 
+PARA ELLO HAY QUE BUSCAR EN LA BBDD EL AUTOR Y LA CATEGORIA EN FUNCION DEL NOMBRE */

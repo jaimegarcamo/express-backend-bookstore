@@ -1,0 +1,21 @@
+{
+  "name": "04-express-books",
+  "version": "1.0.0",
+  "description": "This is a REST API for managing a collection or library of books. It can be used in an a library or a college",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --ignore './*.json' src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jaime Garcia",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^8.1.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "lowdb": "^1.0.0",
+    "nodemon": "^2.0.7",
+    "uuid": "^8.3.2"
+  }
+}
