@@ -6,7 +6,7 @@ const categoryRouter = express.Router()
 //en nuestros metodos GET, POST ... (que está en model/categories)
 const categoryService = require('../model/categories')
 //Llamamos al fichero donde hacemos las validaciones, para poder usarlas en los metodos
-const validationService = require('../services/validationService')
+const bookValidationService = require('../services/bookValidationService')
 //Llamamos a ajv para poder validar esquemas
 const Ajv = require('ajv');
 const ajv = new Ajv();

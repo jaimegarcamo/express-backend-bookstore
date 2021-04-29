@@ -1,10 +1,17 @@
 {
-  "books": [],
-  "authors": [
+  "books": [
     {
-      "name": "test",
-      "id": "b6b39b11-4e6d-4cd4-be41-a7e3b0437eb0"
+      "title": "Alta Fidelidad",
+      "author": "Nick Hornby",
+      "isbn": "817525766-0",
+      "numPages": 350,
+      "category": [
+        "Comedy"
+      ],
+      "id": "6a977c55-41a8-4f07-b42d-7cf3cddaf3eb",
+      "booked": false
     }
   ],
+  "authors": [],
   "categories": []
 }

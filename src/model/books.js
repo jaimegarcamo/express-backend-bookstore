@@ -22,7 +22,9 @@ db.defaults({books: [], authors: [], categories: []}).write()
 const createBook = (data) => {
     data.id = uuidv4() //Ejemplo de como crear un id random
     data.booked = false
-    db.get('books').push(data).write();
+    db.get('books').push(data).write()
+
+    return data.id
 }
 
 //Servicio para consultar todos los libros. Esta función será llamada desde el GET global
