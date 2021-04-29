@@ -13,7 +13,7 @@ const { authorRouter } = require('./controller/authorController')
 const { categoryRouter } = require('./controller/categoryController')
 
 
-/* LE DECIMOS A NUESTRA APP QUE USE ROUTER*/
+/* LE DECIMOS A NUESTRA APP QUE USE ROUTER */
 const router = express.Router()
 
 /*CREAMOE EL EXPRESS EN LUGAR DE HTTP (Trae mas cosas que http a pelo)*/
