@@ -31,7 +31,12 @@ bookRouter.post('', async (req, res) => {
 //GET global
 bookRouter.get('', async (req, res) => {
     const books = await bookService.consultAllBooks()
-    res.status(200).json({books})
+    if(books.length > 0){
+        res.status(200).json({books})    
+    }
+    else{
+        res.status(404).json({"message": "You dont have any book saved"})
+    }
 })
 
 //GET por id

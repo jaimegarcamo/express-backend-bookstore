@@ -12,6 +12,16 @@
       "booked": false
     }
   ],
-  "authors": [],
-  "categories": []
+  "authors": [
+    {
+      "name": "Nick Hornby",
+      "id": "ea808b71-4c9a-420a-a5f5-7dbb7f52a194"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Comedy",
+      "id": "ba514bb7-0644-4e86-9fc6-ca738753db85"
+    }
+  ]
 }
