@@ -52,7 +52,7 @@ categoryRouter.get('/:id', async (req, res) => {
         res.status(404).json({ message: `Category with id ${id} was not found `});
     }
     else {
-        res.status(200).json({categories})
+        res.status(200).json(categories)
     }
 })
 
@@ -64,7 +64,7 @@ categoryRouter.get('/name/:name', async (req, res) => {
         res.status(404).json({ message: `Category with name ${name} was not found `});
     }
     else {
-        res.status(200).json({categories})
+        res.status(200).json(categories)
     }
 })
 

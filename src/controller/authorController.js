@@ -49,7 +49,7 @@ authorRouter.get('/:id', async (req, res) => {
         res.status(404).json({ message: `Author with id ${id} was not found `});
     }
     else {
-        res.status(200).json({authors})
+        res.status(200).json(authors)
     }
 })
 
@@ -61,7 +61,7 @@ authorRouter.get('/name/:name', async (req, res) => {
         res.status(404).json({ message: `Author with name ${name} was not found `});
     }
     else {
-        res.status(200).json({authors})
+        res.status(200).json(authors)
     }
 })
 

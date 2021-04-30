@@ -73,7 +73,7 @@ const searchBook = (data) => {
     
     if(data.author.length > 0 && data.categories.length > 0){
         const books = db.get('books')
-        .filter({author: data.author, category: data.categories})
+        .filter({author: data.author, categories: data.categories})
         .value()
 
         return(books)  
@@ -87,7 +87,7 @@ const searchBook = (data) => {
     }
     else if(data.author.length == 0 && data.categories.length > 0){
         const books = db.get('books')
-        .filter({category: data.categories})
+        .filter({categories: data.categories})
         .value()
 
         return(books)

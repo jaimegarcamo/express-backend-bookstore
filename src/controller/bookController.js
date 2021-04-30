@@ -32,7 +32,7 @@ bookRouter.post('', async (req, res) => {
 bookRouter.get('', async (req, res) => {
     const books = await bookService.consultAllBooks()
     if(books.length > 0){
-        res.status(200).json({books})    
+        res.status(200).json(books)    
     }
     else{
         res.status(404).json({"message": "You dont have any book saved"})
@@ -47,7 +47,7 @@ bookRouter.get('/:id', async (req, res) => {
         res.status(404).json({ message: `Book with id ${id} was not found `});
     }
     else {
-        res.status(200).json({books})
+        res.status(200).json(books)
     }
 })
 
@@ -59,7 +59,7 @@ bookRouter.get('/isbn/:isbn', async (req, res) => {
         res.status(404).json({ message: `Book with isbn ${isbn} was not found `});
     }
     else {
-        res.status(200).json({books})
+        res.status(200).json(books)
     }
 })
 
@@ -141,7 +141,7 @@ bookRouter.post('/find', async (req, res) => {
         const books = await bookService.searchBook(data)
         //Si el objeto books devuelve algun libro lo mostramos, sino, decimos que la busqueda no ha tenido exito
         if(books.length > 0){
-            res.status(200).json({books})
+            res.status(200).json(books)
         }
         else{
             res.status(404).json({message: 'Your search doesnt have results'})

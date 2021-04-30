@@ -22,9 +22,9 @@ const bookCreateSchema = {
       author: {type: "string"},
       isbn: {type: "string"},
       numPages: {type: "number"}, 
-      category: {type: "array", uniqueItems: true},
+      categories: {type: "array", uniqueItems: true},
     },
-    required: ["title", "author", "isbn", "numPages", "category"],
+    required: ["title", "author", "isbn", "numPages", "categories"],
     additionalProperties: false
 };
 
@@ -37,9 +37,9 @@ const bookUpdateSchemaPut = {
       isbn: {type: "string"},
       booked: {type: "boolean"},
       numPages: {type: "number"}, 
-      category: {type: "array", uniqueItems: true},
+      categories: {type: "array", uniqueItems: true},
     },
-    required: ["title", "author", "isbn", "numPages", "booked", "category"],
+    required: ["title", "author", "isbn", "numPages", "booked", "categories"],
     additionalProperties: false
 };
 
@@ -52,7 +52,7 @@ const bookUpdateSchemaPatch = {
       isbn: {type: "string"},
       booked: {type: "boolean"},
       numPages: {type: "number"}, 
-      category: {type: "array", uniqueItems: true},
+      categories: {type: "array", uniqueItems: true},
     },
     required: [],
     additionalProperties: false
