@@ -37,7 +37,7 @@ categoryRouter.post('', async (req, res) => {
 categoryRouter.get('', async (req, res) => {
     const categories = await categoryService.consultAllCategories()
     if(categories.length > 0){
-        res.status(200).json({categories})    
+        res.status(200).json(categories)    
     }
     else{
         res.status(404).json({"message": "You dont have any category saved"})

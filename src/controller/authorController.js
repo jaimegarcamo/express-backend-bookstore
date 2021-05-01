@@ -34,7 +34,7 @@ authorRouter.post('', async (req, res) => {
 authorRouter.get('', async (req, res) => {
     const authors = await authorService.consultAllAuthors()
     if(authors.length > 0){
-        res.status(200).json({authors})    
+        res.status(200).json(authors)    
     }
     else{
         res.status(404).json({"message": "You dont have any author saved"})

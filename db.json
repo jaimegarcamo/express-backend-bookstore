@@ -6,9 +6,32 @@
       "isbn": "817525766-0",
       "numPages": 350,
       "categories": [
-        "Comedy"
+        "Comedy",
+        "Drama"
       ],
       "id": "6a977c55-41a8-4f07-b42d-7cf3cddaf3eb",
+      "booked": false
+    },
+    {
+      "title": "Prueba",
+      "numPages": 200,
+      "isbn": "817525766-1",
+      "categories": [
+        "Comedy"
+      ],
+      "author": "Nick Hornby",
+      "id": "d6dc66e1-f7ea-48b8-b54c-cf4108b87cd6",
+      "booked": false
+    },
+    {
+      "title": "Prueba2",
+      "numPages": 500,
+      "isbn": "817525766-2",
+      "categories": [
+        "Comedy"
+      ],
+      "author": "Nick Hornby",
+      "id": "09e18766-37f8-4a8c-8444-abab0b34fc66",
       "booked": false
     }
   ],
