@@ -6,32 +6,42 @@
       "isbn": "817525766-0",
       "numPages": 350,
       "categories": [
-        "Comedy",
-        "Drama"
+        "Comedy"
       ],
       "id": "6a977c55-41a8-4f07-b42d-7cf3cddaf3eb",
       "booked": false
     },
     {
-      "title": "Prueba",
-      "numPages": 200,
+      "title": "Hi-Fi a",
+      "numPages": 500,
       "isbn": "817525766-1",
       "categories": [
         "Comedy"
       ],
       "author": "Nick Hornby",
-      "id": "d6dc66e1-f7ea-48b8-b54c-cf4108b87cd6",
+      "id": "a56b02f5-7979-412a-b729-39c67d34cb30",
       "booked": false
     },
     {
-      "title": "Prueba2",
-      "numPages": 500,
+      "title": "El hombre en busca de sentido",
+      "numPages": 250,
       "isbn": "817525766-2",
       "categories": [
-        "Comedy"
+        "Biography"
       ],
-      "author": "Nick Hornby",
-      "id": "09e18766-37f8-4a8c-8444-abab0b34fc66",
+      "author": "Viktor Frankl",
+      "id": "c9a72cfb-e8bc-4b90-bcb4-0ecd53e9cba6",
+      "booked": false
+    },
+    {
+      "title": "MERN Guía",
+      "numPages": 255,
+      "isbn": "817525766-3",
+      "categories": [
+        "MERN"
+      ],
+      "author": "Jesus Fontecha",
+      "id": "b4efde19-1328-4352-bc09-b5c2f6ef0607",
       "booked": false
     }
   ],
@@ -39,12 +49,32 @@
     {
       "name": "Nick Hornby",
       "id": "ea808b71-4c9a-420a-a5f5-7dbb7f52a194"
+    },
+    {
+      "name": "Viktor Frankl",
+      "id": "ea808b71-4c9a-420a-a5f5-7dbb7f52a195"
+    },
+    {
+      "name": "Jesus Fontecha",
+      "id": "ea808b71-4c9a-420a-a5f5-7dbb7f52a196"
     }
   ],
   "categories": [
     {
       "name": "Comedy",
       "id": "ba514bb7-0644-4e86-9fc6-ca738753db85"
+    },
+    {
+      "name": "Drama",
+      "id": "1d5f32cd-e694-4574-adc0-8572ba762db4"
+    },
+    {
+      "name": "MERN",
+      "id": "1d5f32cd-e694-4574-adc0-8572ba762db6"
+    },
+    {
+      "name": "Biography",
+      "id": "1d5f32cd-e694-4574-adc0-8572ba762db5"
     }
   ]
 }
